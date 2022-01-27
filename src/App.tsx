@@ -1,5 +1,5 @@
 import { Router } from "./router";
-import { FormProvider } from './Context/FormContext';
+import { FormProvider } from './context/FormContext';
 
 
 const App = () => {
