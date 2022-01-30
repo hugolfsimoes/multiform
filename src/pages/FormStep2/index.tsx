@@ -21,9 +21,13 @@ export const FormStep2 = () => {
   }, []);
 
   const handleNextStep = () => {
-    navigate('.././step3');
-
+    if (state.name !== '') {
+      navigate('.././step3');
+    } else {
+      alert("Preencha os dados");
+    }
   };
+
   const setLevel = (level: number) => {
     dispatch({
       type: FormActions.setLevel,
